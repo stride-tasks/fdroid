@@ -1,0 +1,14 @@
+# see https://gitlab.com/fdroid/fdroidserver/blob/2.3a1/examples/config.yml
+
+repo_url: https://stride-tasks.github.io/fdroid/repo
+repo_name: Stride
+repo_description: This F-Droid repository of the stride application.
+# TODO: Add icon
+# repo_icon:
+
+repo_keyalias: "KEYALIAS"
+keystorepass: "KEYSTORE_PASS"
+keypass: "KEYPASS"
+keydname: "KEYDNAME"
+
+keystore: keystore.p12

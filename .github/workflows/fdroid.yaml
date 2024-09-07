@@ -1,0 +1,54 @@
+name: F-Droid
+
+on:
+  push:
+    branches: ["main"]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+
+env:
+  RUSTFLAGS: -Dwarnings
+  CARGO_TERM_COLOR: always
+
+jobs:
+  rust-lint:
+    name: Build and publish
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout 🛎️
+        uses: actions/checkout@v4
+
+      - name: Setup JDK 17
+        uses: actions/setup-java@v4
+        with:
+          distribution: "temurin"
+          java-version: "17"
+
+      - name: Setup Android SDK
+        uses: android-actions/setup-android@v3
+        with:
+          cmdline-tools-version: 10406996 # 11.0
+
+      - name: Install F-Droid Server
+        run: ./scripts/install-fdroidserver.sh
+
+      - name: Build
+        run: ./scripts/update.sh
+        env:
+          CONFIG_KEYSTORE: ${{ secrets.CONFIG_KEYSTORE }}
+          CONFIG_KEYALIAS: ${{ secrets.CONFIG_KEYALIAS }}
+          CONFIG_KEYSTORE_PASS: ${{ secrets.CONFIG_KEYSTORE_PASS }}
+          CONFIG_KEYPASS: ${{ secrets.CONFIG_KEYPASS }}
+          CONFIG_KEYDNAME: ${{ secrets.CONFIG_KEYDNAME }}
+          KEYSTORE: ${{ secrets.KEYSTORE }}
+
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: .
+          force_orphan: true
