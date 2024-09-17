@@ -1,0 +1,16 @@
+{
+  "repo": {
+    "timestamp": 1726581050000,
+    "version": 20002,
+    "name": "Stride",
+    "icon": "icon.png",
+    "address": "https://stride-tasks.github.io/fdroid/repo",
+    "description": "This F-Droid repository of the stride application."
+  },
+  "requests": {
+    "install": [],
+    "uninstall": []
+  },
+  "apps": [],
+  "packages": {}
+}

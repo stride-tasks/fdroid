@@ -1,0 +1,57 @@
+{
+  "/etc/issue.net": "Ubuntu 22.04.4 LTS",
+  "antiFeatures": {},
+  "apksigner": "/usr/local/lib/android/sdk/build-tools/35.0.0/apksigner",
+  "archivePolicy0": [],
+  "commandLine": [
+    "/usr/local/bin/fdroid update",
+    "--pretty",
+    "--delete-unknown",
+    "--use-date-from-apk"
+  ],
+  "disabled": [],
+  "endTimestamp": 1726581054305,
+  "failedBuilds": {
+    "org.stridetasks.stride": [
+      2001
+    ]
+  },
+  "fdroiddata": {
+    "commitId": "41632bcf8df90d3a1c2d7705abdab8873d5aa4ca",
+    "isDirty": true,
+    "modifiedFiles": [
+      "config.yml"
+    ],
+    "untrackedFiles": [
+      "logs/org.stridetasks.stride.log",
+      "repo/entry.jar",
+      "repo/entry.json",
+      "repo/icons/icon.png",
+      "repo/index-v1.jar",
+      "repo/index-v1.json",
+      "repo/index-v2.json",
+      "repo/index.css",
+      "repo/index.html",
+      "repo/index.jar",
+      "repo/index.png",
+      "repo/index.xml",
+      "repo/org.stridetasks.stride_2001.log.gz",
+      "repo/status/build.json",
+      "repo/status/publish.json",
+      "repo/status/running.json"
+    ]
+  },
+  "jarsigner": "/opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.12-7/x64/bin/jarsigner",
+  "keytool": "/opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.12-7/x64/bin/keytool",
+  "needsUpdate": [
+    "org.stridetasks.stride"
+  ],
+  "noPackages": [
+    "org.stridetasks.stride"
+  ],
+  "noUpdateCheck": [
+    "org.stridetasks.stride"
+  ],
+  "startTimestamp": 1726581050000,
+  "subcommand": "update"
+}

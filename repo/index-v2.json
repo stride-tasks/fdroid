@@ -1,0 +1,20 @@
+{
+  "repo": {
+    "name": {
+      "en-US": "Stride"
+    },
+    "description": {
+      "en-US": "This F-Droid repository of the stride application."
+    },
+    "icon": {
+      "en-US": {
+        "name": "/icons/icon.png",
+        "sha256": "af7c0002fc5c72a74a34d950484609eb993d9ca846b2160627710a3d54adbc4b",
+        "size": 708
+      }
+    },
+    "address": "https://stride-tasks.github.io/fdroid/repo",
+    "timestamp": 1726581050000
+  },
+  "packages": {}
+}
