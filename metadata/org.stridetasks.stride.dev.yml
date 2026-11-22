@@ -1,0 +1,21 @@
+Categories:
+  - Internet
+  - Writing
+
+License: AGPL-3.0-or-later
+AuthorName: Haled Odat <stride.tasks@gmail.com>
+SourceCode: https://github.com/stride-tasks/stride
+IssueTracker: https://github.com/stride-tasks/stride/issues
+
+Name: Stride Development
+Summary: Development builds of the Stride task management application.
+Description: |-
+  Stride is a task management application with built-in Git integration.
+  Create and sync tasks using a Git provider such as GitHub, GitLab, or
+  SourceHut, or use a self-hosted server.
+
+  Stride is currently in alpha, so features and behavior may change.
+
+  This development build includes the latest changes and may be unstable.
+
+  Stride Development and Stride can be installed alongside each other.

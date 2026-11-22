@@ -3,52 +3,90 @@ name: F-Droid
 on:
   push:
     branches: ["main"]
+  repository_dispatch:
+    types: [stride-android-build]
   workflow_dispatch:
+    inputs:
+      release_tag:
+        description: Stride release tag containing APK assets
+        required: true
+        type: string
+        default: development
 
 permissions:
   contents: write
-  pages: write
-
-env:
-  RUSTFLAGS: -Dwarnings
-  CARGO_TERM_COLOR: always
 
 jobs:
-  rust-lint:
-    name: Build and publish
+  publish:
+    name: Update and publish
     runs-on: ubuntu-latest
+    concurrency:
+      group: fdroid-publish
+      cancel-in-progress: false
 
     steps:
-      - name: Checkout 🛎️
-        uses: actions/checkout@v4
+      - name: Checkout
+        uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+
+      - name: Restore published repository
+        run: |
+          if git ls-remote --exit-code --heads origin gh-pages; then
+            git fetch origin gh-pages
+            git archive origin/gh-pages repo | tar -x
+          fi
+
+      - name: Download Stride APKs
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RELEASE_TAG: ${{ github.event.client_payload.release_tag || inputs.release_tag || 'development' }}
+        run: |
+          mkdir -p incoming repo
+          gh release download "$RELEASE_TAG" \
+            --repo stride-tasks/stride \
+            --pattern '*.apk' \
+            --dir incoming \
+            --clobber
+          cp incoming/*.apk repo/
 
       - name: Setup JDK 17
-        uses: actions/setup-java@v4
+        uses: actions/setup-java@v5
         with:
           distribution: "temurin"
           java-version: "17"
 
       - name: Setup Android SDK
-        uses: android-actions/setup-android@v3
+        uses: android-actions/setup-android@v4
         with:
           cmdline-tools-version: 10406996 # 11.0
 
       - name: Install F-Droid Server
         run: ./scripts/install-fdroidserver.sh
 
-      - name: Build
+      - name: Set repository icon
+        run: |
+          mkdir -p repo/icons
+          cp stride_logo.png repo/icons/stride_logo.png
+
+      - name: Update repository
         run: ./scripts/update.sh
         env:
-          CONFIG_KEYSTORE: ${{ secrets.CONFIG_KEYSTORE }}
           CONFIG_KEYALIAS: ${{ secrets.CONFIG_KEYALIAS }}
           CONFIG_KEYSTORE_PASS: ${{ secrets.CONFIG_KEYSTORE_PASS }}
           CONFIG_KEYPASS: ${{ secrets.CONFIG_KEYPASS }}
-          CONFIG_KEYDNAME: ${{ secrets.CONFIG_KEYDNAME }}
           KEYSTORE: ${{ secrets.KEYSTORE }}
+
+      - name: Prepare Pages content
+        run: |
+          mkdir -p deployment
+          cp -a repo deployment/repo
+          touch deployment/.nojekyll
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: .
-          force_orphan: true
+          publish_dir: ./deployment
+          publish_branch: gh-pages
+          keep_files: true

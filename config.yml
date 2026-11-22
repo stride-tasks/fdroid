@@ -3,12 +3,9 @@
 repo_url: https://stride-tasks.github.io/fdroid/repo
 repo_name: Stride
 repo_description: This F-Droid repository of the stride application.
-# TODO: Add icon
-# repo_icon:
+repo_icon: stride_logo.png
 
 repo_keyalias: "KEYALIAS"
 keystorepass: "KEYSTORE_PASS"
 keypass: "KEYPASS"
-keydname: "KEYDNAME"
-
 keystore: keystore.p12
