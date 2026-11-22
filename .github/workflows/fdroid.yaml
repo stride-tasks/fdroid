@@ -83,6 +83,7 @@ jobs:
         run: |
           mkdir -p deployment
           cp -a repo deployment/repo
+          cp index.html deployment/index.html
           touch deployment/.nojekyll
 
       - name: Deploy
