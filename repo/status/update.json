@@ -9,7 +9,7 @@
     "--use-date-from-apk"
   ],
   "disabled": [],
-  "endTimestamp": 1795360870082,
+  "endTimestamp": 1795362448962,
   "failedBuilds": {},
   "fdroiddata": {
     "commitId": "c385f089b261238eb7ccea7925a7073d02b37dee",
@@ -60,14 +60,14 @@
     "org.stridetasks.stride"
   ],
   "stages": {
-    "delete_disabled_builds": 1795360865136,
-    "index.make repo": 1795360867151,
-    "prepare_apps repo": 1795360867150,
-    "process_apks": 1795360865137,
-    "read_added_date_from_all_apks": 1795360867150,
-    "remove_apks": 1795360867149,
-    "scan_repo_files": 1795360867148
+    "delete_disabled_builds": 1795362442718,
+    "index.make repo": 1795362445606,
+    "prepare_apps repo": 1795362445605,
+    "process_apks": 1795362442719,
+    "read_added_date_from_all_apks": 1795362445605,
+    "remove_apks": 1795362445604,
+    "scan_repo_files": 1795362445603
   },
-  "startTimestamp": 1795360865000,
+  "startTimestamp": 1795362442000,
   "subcommand": "update"
 }
