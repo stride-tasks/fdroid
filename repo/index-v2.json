@@ -8,13 +8,302 @@
     },
     "icon": {
       "en-US": {
-        "name": "/icons/icon.png",
-        "sha256": "af7c0002fc5c72a74a34d950484609eb993d9ca846b2160627710a3d54adbc4b",
-        "size": 708
+        "name": "/icons/stride_logo.png",
+        "sha256": "fa138315e66324d04936ced01646efaef27314f06c7361d612e55fb8cabcc720",
+        "size": 28688
       }
     },
     "address": "https://stride-tasks.github.io/fdroid/repo",
-    "timestamp": 1726581050000
+    "timestamp": 1795359991000,
+    "categories": {
+      "Internet": {
+        "name": {
+          "en-US": "Internet"
+        }
+      },
+      "Writing": {
+        "name": {
+          "en-US": "Writing"
+        }
+      }
+    }
   },
-  "packages": {}
+  "packages": {
+    "org.stridetasks.stride.dev": {
+      "metadata": {
+        "added": 1795359956000,
+        "categories": [
+          "Internet",
+          "Writing"
+        ],
+        "issueTracker": "https://github.com/stride-tasks/stride/issues",
+        "lastUpdated": 1795359956000,
+        "license": "AGPL-3.0-or-later",
+        "sourceCode": "https://github.com/stride-tasks/stride",
+        "authorName": "Haled Odat <stride.tasks@gmail.com>",
+        "name": {
+          "en-US": "Stride Development"
+        },
+        "summary": {
+          "en-US": "Development builds of the Stride task management application."
+        },
+        "description": {
+          "en-US": "Stride is a task management application with built-in Git integration.\nCreate and sync tasks using a Git provider such as GitHub, GitLab, or\nSourceHut, or use a self-hosted server.\n\nStride is currently in alpha, so features and behavior may change.\n\nThis development build includes the latest changes and may be unstable.\n\nStride Development and Stride can be installed alongside each other."
+        },
+        "preferredSigner": "e12d82125da38ae4420d3586327b86bdc3da42dc5e1bb959f80acac5620b0e8a"
+      },
+      "versions": {
+        "e54a2d78f2d65c20d858692b59a747e475512678680139caa29ac86c5fb23c07": {
+          "added": 1795359956000,
+          "file": {
+            "name": "/stride-dev-x86_64.apk",
+            "sha256": "e54a2d78f2d65c20d858692b59a747e475512678680139caa29ac86c5fb23c07",
+            "size": 33906587
+          },
+          "manifest": {
+            "nativecode": [
+              "x86_64"
+            ],
+            "versionName": "0.0.1",
+            "versionCode": 23,
+            "usesSdk": {
+              "minSdkVersion": 24,
+              "targetSdkVersion": 36
+            },
+            "signer": {
+              "sha256": [
+                "e12d82125da38ae4420d3586327b86bdc3da42dc5e1bb959f80acac5620b0e8a"
+              ]
+            },
+            "usesPermission": [
+              {
+                "name": "android.permission.RECEIVE_BOOT_COMPLETED"
+              },
+              {
+                "name": "android.permission.VIBRATE"
+              },
+              {
+                "name": "android.permission.ACCESS_NOTIFICATION_POLICY"
+              },
+              {
+                "name": "android.permission.USE_FULL_SCREEN_INTENT"
+              },
+              {
+                "name": "android.permission.USE_EXACT_ALARM"
+              },
+              {
+                "name": "android.permission.POST_NOTIFICATIONS"
+              },
+              {
+                "name": "android.permission.INTERNET"
+              },
+              {
+                "name": "android.permission.ACCESS_NETWORK_STATE"
+              },
+              {
+                "name": "android.permission.FOREGROUND_SERVICE"
+              },
+              {
+                "name": "android.permission.FOREGROUND_SERVICE_DATA_SYNC"
+              },
+              {
+                "name": "android.permission.WAKE_LOCK"
+              },
+              {
+                "name": "org.stridetasks.stride.dev.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+              }
+            ]
+          }
+        },
+        "7f6b84a035017950585732a681ab139bc27e77840a7b76f87cf56e5047d58d9a": {
+          "added": 1795359956000,
+          "file": {
+            "name": "/stride-dev-arm64-v8a.apk",
+            "sha256": "7f6b84a035017950585732a681ab139bc27e77840a7b76f87cf56e5047d58d9a",
+            "size": 31010730
+          },
+          "manifest": {
+            "nativecode": [
+              "arm64-v8a"
+            ],
+            "versionName": "0.0.1",
+            "versionCode": 22,
+            "usesSdk": {
+              "minSdkVersion": 24,
+              "targetSdkVersion": 36
+            },
+            "signer": {
+              "sha256": [
+                "e12d82125da38ae4420d3586327b86bdc3da42dc5e1bb959f80acac5620b0e8a"
+              ]
+            },
+            "usesPermission": [
+              {
+                "name": "android.permission.RECEIVE_BOOT_COMPLETED"
+              },
+              {
+                "name": "android.permission.VIBRATE"
+              },
+              {
+                "name": "android.permission.ACCESS_NOTIFICATION_POLICY"
+              },
+              {
+                "name": "android.permission.USE_FULL_SCREEN_INTENT"
+              },
+              {
+                "name": "android.permission.USE_EXACT_ALARM"
+              },
+              {
+                "name": "android.permission.POST_NOTIFICATIONS"
+              },
+              {
+                "name": "android.permission.INTERNET"
+              },
+              {
+                "name": "android.permission.ACCESS_NETWORK_STATE"
+              },
+              {
+                "name": "android.permission.FOREGROUND_SERVICE"
+              },
+              {
+                "name": "android.permission.FOREGROUND_SERVICE_DATA_SYNC"
+              },
+              {
+                "name": "android.permission.WAKE_LOCK"
+              },
+              {
+                "name": "org.stridetasks.stride.dev.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+              }
+            ]
+          }
+        },
+        "f595859808478cd2d9e857c83ef905bdbbec32c168dad174021023a5a14f3e07": {
+          "added": 1795359956000,
+          "file": {
+            "name": "/stride-dev-armeabi-v7a.apk",
+            "sha256": "f595859808478cd2d9e857c83ef905bdbbec32c168dad174021023a5a14f3e07",
+            "size": 25350068
+          },
+          "manifest": {
+            "nativecode": [
+              "armeabi-v7a"
+            ],
+            "versionName": "0.0.1",
+            "versionCode": 21,
+            "usesSdk": {
+              "minSdkVersion": 24,
+              "targetSdkVersion": 36
+            },
+            "signer": {
+              "sha256": [
+                "e12d82125da38ae4420d3586327b86bdc3da42dc5e1bb959f80acac5620b0e8a"
+              ]
+            },
+            "usesPermission": [
+              {
+                "name": "android.permission.RECEIVE_BOOT_COMPLETED"
+              },
+              {
+                "name": "android.permission.VIBRATE"
+              },
+              {
+                "name": "android.permission.ACCESS_NOTIFICATION_POLICY"
+              },
+              {
+                "name": "android.permission.USE_FULL_SCREEN_INTENT"
+              },
+              {
+                "name": "android.permission.USE_EXACT_ALARM"
+              },
+              {
+                "name": "android.permission.POST_NOTIFICATIONS"
+              },
+              {
+                "name": "android.permission.INTERNET"
+              },
+              {
+                "name": "android.permission.ACCESS_NETWORK_STATE"
+              },
+              {
+                "name": "android.permission.FOREGROUND_SERVICE"
+              },
+              {
+                "name": "android.permission.FOREGROUND_SERVICE_DATA_SYNC"
+              },
+              {
+                "name": "android.permission.WAKE_LOCK"
+              },
+              {
+                "name": "org.stridetasks.stride.dev.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+              }
+            ]
+          }
+        },
+        "e8b30ff9f1566b354ab31ebd3a1ea4879a2ceadfcafa7d03524cc7af66a2ed3d": {
+          "added": 1795359956000,
+          "file": {
+            "name": "/stride-dev.apk",
+            "sha256": "e8b30ff9f1566b354ab31ebd3a1ea4879a2ceadfcafa7d03524cc7af66a2ed3d",
+            "size": 86418101
+          },
+          "manifest": {
+            "nativecode": [
+              "arm64-v8a",
+              "armeabi-v7a",
+              "x86_64"
+            ],
+            "versionName": "0.0.1",
+            "versionCode": 2,
+            "usesSdk": {
+              "minSdkVersion": 24,
+              "targetSdkVersion": 36
+            },
+            "signer": {
+              "sha256": [
+                "e12d82125da38ae4420d3586327b86bdc3da42dc5e1bb959f80acac5620b0e8a"
+              ]
+            },
+            "usesPermission": [
+              {
+                "name": "android.permission.RECEIVE_BOOT_COMPLETED"
+              },
+              {
+                "name": "android.permission.VIBRATE"
+              },
+              {
+                "name": "android.permission.ACCESS_NOTIFICATION_POLICY"
+              },
+              {
+                "name": "android.permission.USE_FULL_SCREEN_INTENT"
+              },
+              {
+                "name": "android.permission.USE_EXACT_ALARM"
+              },
+              {
+                "name": "android.permission.POST_NOTIFICATIONS"
+              },
+              {
+                "name": "android.permission.INTERNET"
+              },
+              {
+                "name": "android.permission.ACCESS_NETWORK_STATE"
+              },
+              {
+                "name": "android.permission.FOREGROUND_SERVICE"
+              },
+              {
+                "name": "android.permission.FOREGROUND_SERVICE_DATA_SYNC"
+              },
+              {
+                "name": "android.permission.WAKE_LOCK"
+              },
+              {
+                "name": "org.stridetasks.stride.dev.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
 }

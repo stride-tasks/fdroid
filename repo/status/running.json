@@ -1,32 +1,31 @@
 {
-  "/etc/issue.net": "Ubuntu 22.04.4 LTS",
+  "/etc/issue.net": "Ubuntu 26.04.1 LTS",
   "antiFeatures": {},
-  "apksigner": "/usr/local/lib/android/sdk/build-tools/35.0.0/apksigner",
+  "apksigner": "/usr/local/lib/android/sdk/build-tools/37.0.0/apksigner",
   "archivePolicy0": [],
   "commandLine": [
-    "/usr/local/bin/fdroid update",
+    "/home/runner/work/_temp/fdroid-venv/bin/fdroid update",
     "--pretty",
-    "--delete-unknown",
     "--use-date-from-apk"
   ],
   "disabled": [],
-  "endTimestamp": 1726581054305,
-  "failedBuilds": {
-    "org.stridetasks.stride": [
-      2001
-    ]
-  },
+  "endTimestamp": 1795359994614,
+  "failedBuilds": {},
   "fdroiddata": {
-    "commitId": "41632bcf8df90d3a1c2d7705abdab8873d5aa4ca",
+    "commitId": "38f6a024b6acc8409606bc3e098bee130fa7bc16",
     "isDirty": true,
     "modifiedFiles": [
       "config.yml"
     ],
     "untrackedFiles": [
-      "logs/org.stridetasks.stride.log",
+      "incoming/stride-dev-arm64-v8a.apk",
+      "incoming/stride-dev-armeabi-v7a.apk",
+      "incoming/stride-dev-x86_64.apk",
+      "incoming/stride-dev.apk",
       "repo/entry.jar",
       "repo/entry.json",
       "repo/icons/icon.png",
+      "repo/icons/stride_logo.png",
       "repo/index-v1.jar",
       "repo/index-v1.json",
       "repo/index-v2.json",
@@ -38,20 +37,37 @@
       "repo/org.stridetasks.stride_2001.log.gz",
       "repo/status/build.json",
       "repo/status/publish.json",
-      "repo/status/running.json"
+      "repo/status/running.json",
+      "repo/status/update.json",
+      "repo/stride-dev-arm64-v8a.apk",
+      "repo/stride-dev-armeabi-v7a.apk",
+      "repo/stride-dev-x86_64.apk",
+      "repo/stride-dev.apk"
     ]
   },
-  "jarsigner": "/opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.12-7/x64/bin/jarsigner",
-  "keytool": "/opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.12-7/x64/bin/keytool",
+  "jarsigner": "/opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.21-9/x64/bin/jarsigner",
+  "keytool": "/opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.21-9/x64/bin/keytool",
   "needsUpdate": [
+    "org.stridetasks.stride.dev",
     "org.stridetasks.stride"
   ],
   "noPackages": [
+    "org.stridetasks.stride.dev",
     "org.stridetasks.stride"
   ],
   "noUpdateCheck": [
+    "org.stridetasks.stride.dev",
     "org.stridetasks.stride"
   ],
-  "startTimestamp": 1726581050000,
+  "stages": {
+    "delete_disabled_builds": 1795359989224,
+    "index.make repo": 1795359991759,
+    "prepare_apps repo": 1795359991758,
+    "process_apks": 1795359989224,
+    "read_added_date_from_all_apks": 1795359991758,
+    "remove_apks": 1795359991757,
+    "scan_repo_files": 1795359991756
+  },
+  "startTimestamp": 1795359989000,
   "subcommand": "update"
 }

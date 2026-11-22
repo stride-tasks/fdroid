@@ -1,9 +1,9 @@
 {
   "repo": {
-    "timestamp": 1726581050000,
+    "timestamp": 1795359991000,
     "version": 20002,
     "name": "Stride",
-    "icon": "icon.png",
+    "icon": "stride_logo.png",
     "address": "https://stride-tasks.github.io/fdroid/repo",
     "description": "This F-Droid repository of the stride application."
   },
@@ -11,6 +11,297 @@
     "install": [],
     "uninstall": []
   },
-  "apps": [],
-  "packages": {}
+  "apps": [
+    {
+      "authorName": "Haled Odat <stride.tasks@gmail.com>",
+      "categories": [
+        "Internet",
+        "Writing"
+      ],
+      "suggestedVersionCode": "23",
+      "description": "Stride is a task management application with built-in Git integration.\nCreate and sync tasks using a Git provider such as GitHub, GitLab, or\nSourceHut, or use a self-hosted server.\n\nStride is currently in alpha, so features and behavior may change.\n\nThis development build includes the latest changes and may be unstable.\n\nStride Development and Stride can be installed alongside each other.",
+      "issueTracker": "https://github.com/stride-tasks/stride/issues",
+      "license": "AGPL-3.0-or-later",
+      "name": "Stride Development",
+      "sourceCode": "https://github.com/stride-tasks/stride",
+      "summary": "Development builds of the Stride task management application.",
+      "added": 1795359956000,
+      "packageName": "org.stridetasks.stride.dev",
+      "lastUpdated": 1795359956000
+    }
+  ],
+  "packages": {
+    "org.stridetasks.stride.dev": [
+      {
+        "added": 1795359956000,
+        "apkName": "stride-dev-x86_64.apk",
+        "hash": "e54a2d78f2d65c20d858692b59a747e475512678680139caa29ac86c5fb23c07",
+        "hashType": "sha256",
+        "minSdkVersion": 24,
+        "nativecode": [
+          "x86_64"
+        ],
+        "packageName": "org.stridetasks.stride.dev",
+        "sig": "31985f428ae57773cc5db9b108aadb31",
+        "signer": "e12d82125da38ae4420d3586327b86bdc3da42dc5e1bb959f80acac5620b0e8a",
+        "size": 33906587,
+        "targetSdkVersion": 36,
+        "uses-permission": [
+          [
+            "android.permission.RECEIVE_BOOT_COMPLETED",
+            null
+          ],
+          [
+            "android.permission.VIBRATE",
+            null
+          ],
+          [
+            "android.permission.ACCESS_NOTIFICATION_POLICY",
+            null
+          ],
+          [
+            "android.permission.USE_FULL_SCREEN_INTENT",
+            null
+          ],
+          [
+            "android.permission.USE_EXACT_ALARM",
+            null
+          ],
+          [
+            "android.permission.POST_NOTIFICATIONS",
+            null
+          ],
+          [
+            "android.permission.INTERNET",
+            null
+          ],
+          [
+            "android.permission.ACCESS_NETWORK_STATE",
+            null
+          ],
+          [
+            "android.permission.FOREGROUND_SERVICE",
+            null
+          ],
+          [
+            "android.permission.FOREGROUND_SERVICE_DATA_SYNC",
+            null
+          ],
+          [
+            "android.permission.WAKE_LOCK",
+            null
+          ],
+          [
+            "org.stridetasks.stride.dev.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+            null
+          ]
+        ],
+        "versionCode": 23,
+        "versionName": "0.0.1"
+      },
+      {
+        "added": 1795359956000,
+        "apkName": "stride-dev-arm64-v8a.apk",
+        "hash": "7f6b84a035017950585732a681ab139bc27e77840a7b76f87cf56e5047d58d9a",
+        "hashType": "sha256",
+        "minSdkVersion": 24,
+        "nativecode": [
+          "arm64-v8a"
+        ],
+        "packageName": "org.stridetasks.stride.dev",
+        "sig": "31985f428ae57773cc5db9b108aadb31",
+        "signer": "e12d82125da38ae4420d3586327b86bdc3da42dc5e1bb959f80acac5620b0e8a",
+        "size": 31010730,
+        "targetSdkVersion": 36,
+        "uses-permission": [
+          [
+            "android.permission.RECEIVE_BOOT_COMPLETED",
+            null
+          ],
+          [
+            "android.permission.VIBRATE",
+            null
+          ],
+          [
+            "android.permission.ACCESS_NOTIFICATION_POLICY",
+            null
+          ],
+          [
+            "android.permission.USE_FULL_SCREEN_INTENT",
+            null
+          ],
+          [
+            "android.permission.USE_EXACT_ALARM",
+            null
+          ],
+          [
+            "android.permission.POST_NOTIFICATIONS",
+            null
+          ],
+          [
+            "android.permission.INTERNET",
+            null
+          ],
+          [
+            "android.permission.ACCESS_NETWORK_STATE",
+            null
+          ],
+          [
+            "android.permission.FOREGROUND_SERVICE",
+            null
+          ],
+          [
+            "android.permission.FOREGROUND_SERVICE_DATA_SYNC",
+            null
+          ],
+          [
+            "android.permission.WAKE_LOCK",
+            null
+          ],
+          [
+            "org.stridetasks.stride.dev.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+            null
+          ]
+        ],
+        "versionCode": 22,
+        "versionName": "0.0.1"
+      },
+      {
+        "added": 1795359956000,
+        "apkName": "stride-dev-armeabi-v7a.apk",
+        "hash": "f595859808478cd2d9e857c83ef905bdbbec32c168dad174021023a5a14f3e07",
+        "hashType": "sha256",
+        "minSdkVersion": 24,
+        "nativecode": [
+          "armeabi-v7a"
+        ],
+        "packageName": "org.stridetasks.stride.dev",
+        "sig": "31985f428ae57773cc5db9b108aadb31",
+        "signer": "e12d82125da38ae4420d3586327b86bdc3da42dc5e1bb959f80acac5620b0e8a",
+        "size": 25350068,
+        "targetSdkVersion": 36,
+        "uses-permission": [
+          [
+            "android.permission.RECEIVE_BOOT_COMPLETED",
+            null
+          ],
+          [
+            "android.permission.VIBRATE",
+            null
+          ],
+          [
+            "android.permission.ACCESS_NOTIFICATION_POLICY",
+            null
+          ],
+          [
+            "android.permission.USE_FULL_SCREEN_INTENT",
+            null
+          ],
+          [
+            "android.permission.USE_EXACT_ALARM",
+            null
+          ],
+          [
+            "android.permission.POST_NOTIFICATIONS",
+            null
+          ],
+          [
+            "android.permission.INTERNET",
+            null
+          ],
+          [
+            "android.permission.ACCESS_NETWORK_STATE",
+            null
+          ],
+          [
+            "android.permission.FOREGROUND_SERVICE",
+            null
+          ],
+          [
+            "android.permission.FOREGROUND_SERVICE_DATA_SYNC",
+            null
+          ],
+          [
+            "android.permission.WAKE_LOCK",
+            null
+          ],
+          [
+            "org.stridetasks.stride.dev.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+            null
+          ]
+        ],
+        "versionCode": 21,
+        "versionName": "0.0.1"
+      },
+      {
+        "added": 1795359956000,
+        "apkName": "stride-dev.apk",
+        "hash": "e8b30ff9f1566b354ab31ebd3a1ea4879a2ceadfcafa7d03524cc7af66a2ed3d",
+        "hashType": "sha256",
+        "minSdkVersion": 24,
+        "nativecode": [
+          "arm64-v8a",
+          "armeabi-v7a",
+          "x86_64"
+        ],
+        "packageName": "org.stridetasks.stride.dev",
+        "sig": "31985f428ae57773cc5db9b108aadb31",
+        "signer": "e12d82125da38ae4420d3586327b86bdc3da42dc5e1bb959f80acac5620b0e8a",
+        "size": 86418101,
+        "targetSdkVersion": 36,
+        "uses-permission": [
+          [
+            "android.permission.RECEIVE_BOOT_COMPLETED",
+            null
+          ],
+          [
+            "android.permission.VIBRATE",
+            null
+          ],
+          [
+            "android.permission.ACCESS_NOTIFICATION_POLICY",
+            null
+          ],
+          [
+            "android.permission.USE_FULL_SCREEN_INTENT",
+            null
+          ],
+          [
+            "android.permission.USE_EXACT_ALARM",
+            null
+          ],
+          [
+            "android.permission.POST_NOTIFICATIONS",
+            null
+          ],
+          [
+            "android.permission.INTERNET",
+            null
+          ],
+          [
+            "android.permission.ACCESS_NETWORK_STATE",
+            null
+          ],
+          [
+            "android.permission.FOREGROUND_SERVICE",
+            null
+          ],
+          [
+            "android.permission.FOREGROUND_SERVICE_DATA_SYNC",
+            null
+          ],
+          [
+            "android.permission.WAKE_LOCK",
+            null
+          ],
+          [
+            "org.stridetasks.stride.dev.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+            null
+          ]
+        ],
+        "versionCode": 2,
+        "versionName": "0.0.1"
+      }
+    ]
+  }
 }
