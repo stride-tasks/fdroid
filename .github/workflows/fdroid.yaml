@@ -62,7 +62,9 @@ jobs:
           cmdline-tools-version: 10406996 # 11.0
 
       - name: Install F-Droid Server
-        run: ./scripts/install-fdroidserver.sh
+        run: |
+          ./scripts/install-fdroidserver.sh "$RUNNER_TEMP/fdroid-venv"
+          echo "$RUNNER_TEMP/fdroid-venv/bin" >> "$GITHUB_PATH"
 
       - name: Set repository icon
         run: |
