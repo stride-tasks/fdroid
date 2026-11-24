@@ -14,7 +14,7 @@
       }
     },
     "address": "https://stride-tasks.github.io/fdroid/repo",
-    "timestamp": 1795362445000,
+    "timestamp": 1795553480000,
     "categories": {
       "Internet": {
         "name": {
@@ -53,19 +53,19 @@
         "preferredSigner": "e12d82125da38ae4420d3586327b86bdc3da42dc5e1bb959f80acac5620b0e8a"
       },
       "versions": {
-        "e54a2d78f2d65c20d858692b59a747e475512678680139caa29ac86c5fb23c07": {
+        "f240728526ba7a2fa831598f99a58c10131a31034b6ff2c9741726aa3a96046b": {
           "added": 1795359956000,
           "file": {
             "name": "/stride-dev-x86_64.apk",
-            "sha256": "e54a2d78f2d65c20d858692b59a747e475512678680139caa29ac86c5fb23c07",
-            "size": 33906587
+            "sha256": "f240728526ba7a2fa831598f99a58c10131a31034b6ff2c9741726aa3a96046b",
+            "size": 34008987
           },
           "manifest": {
             "nativecode": [
               "x86_64"
             ],
             "versionName": "0.0.1",
-            "versionCode": 23,
+            "versionCode": 33,
             "usesSdk": {
               "minSdkVersion": 24,
               "targetSdkVersion": 36
@@ -115,19 +115,19 @@
             ]
           }
         },
-        "7f6b84a035017950585732a681ab139bc27e77840a7b76f87cf56e5047d58d9a": {
+        "685871081fa9e99b881d17f2df3737fbcab5b8f72dba19b9d2677c754cecc2ab": {
           "added": 1795359956000,
           "file": {
             "name": "/stride-dev-arm64-v8a.apk",
-            "sha256": "7f6b84a035017950585732a681ab139bc27e77840a7b76f87cf56e5047d58d9a",
-            "size": 31010730
+            "sha256": "685871081fa9e99b881d17f2df3737fbcab5b8f72dba19b9d2677c754cecc2ab",
+            "size": 31039402
           },
           "manifest": {
             "nativecode": [
               "arm64-v8a"
             ],
             "versionName": "0.0.1",
-            "versionCode": 22,
+            "versionCode": 32,
             "usesSdk": {
               "minSdkVersion": 24,
               "targetSdkVersion": 36
@@ -177,19 +177,19 @@
             ]
           }
         },
-        "f595859808478cd2d9e857c83ef905bdbbec32c168dad174021023a5a14f3e07": {
+        "b3f74296ec1eec6a6605c6da63372de144b9c1058ec030dc1ac3f506c3940f67": {
           "added": 1795359956000,
           "file": {
             "name": "/stride-dev-armeabi-v7a.apk",
-            "sha256": "f595859808478cd2d9e857c83ef905bdbbec32c168dad174021023a5a14f3e07",
-            "size": 25350068
+            "sha256": "b3f74296ec1eec6a6605c6da63372de144b9c1058ec030dc1ac3f506c3940f67",
+            "size": 25403316
           },
           "manifest": {
             "nativecode": [
               "armeabi-v7a"
             ],
             "versionName": "0.0.1",
-            "versionCode": 21,
+            "versionCode": 31,
             "usesSdk": {
               "minSdkVersion": 24,
               "targetSdkVersion": 36
@@ -239,12 +239,12 @@
             ]
           }
         },
-        "e8b30ff9f1566b354ab31ebd3a1ea4879a2ceadfcafa7d03524cc7af66a2ed3d": {
+        "57e9ab1746c66ed9ea6dcd78c3473847722111cb82740d800ef26c876a9e1a0b": {
           "added": 1795359956000,
           "file": {
             "name": "/stride-dev.apk",
-            "sha256": "e8b30ff9f1566b354ab31ebd3a1ea4879a2ceadfcafa7d03524cc7af66a2ed3d",
-            "size": 86418101
+            "sha256": "57e9ab1746c66ed9ea6dcd78c3473847722111cb82740d800ef26c876a9e1a0b",
+            "size": 86602421
           },
           "manifest": {
             "nativecode": [
@@ -253,7 +253,7 @@
               "x86_64"
             ],
             "versionName": "0.0.1",
-            "versionCode": 2,
+            "versionCode": 3,
             "usesSdk": {
               "minSdkVersion": 24,
               "targetSdkVersion": 36

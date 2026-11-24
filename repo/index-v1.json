@@ -1,6 +1,6 @@
 {
   "repo": {
-    "timestamp": 1795362445000,
+    "timestamp": 1795553480000,
     "version": 20002,
     "name": "Stride",
     "icon": "stride_logo.png",
@@ -18,7 +18,7 @@
         "Internet",
         "Writing"
       ],
-      "suggestedVersionCode": "23",
+      "suggestedVersionCode": "33",
       "description": "Stride is a task management application with built-in Git integration.\nCreate and sync tasks using a Git provider such as GitHub, GitLab, or\nSourceHut, or use a self-hosted server.\n\nStride is currently in alpha, so features and behavior may change.\n\nThis development build includes the latest changes and may be unstable.\n\nStride Development and Stride can be installed alongside each other.",
       "issueTracker": "https://github.com/stride-tasks/stride/issues",
       "license": "AGPL-3.0-or-later",
@@ -35,7 +35,7 @@
       {
         "added": 1795359956000,
         "apkName": "stride-dev-x86_64.apk",
-        "hash": "e54a2d78f2d65c20d858692b59a747e475512678680139caa29ac86c5fb23c07",
+        "hash": "f240728526ba7a2fa831598f99a58c10131a31034b6ff2c9741726aa3a96046b",
         "hashType": "sha256",
         "minSdkVersion": 24,
         "nativecode": [
@@ -44,7 +44,7 @@
         "packageName": "org.stridetasks.stride.dev",
         "sig": "31985f428ae57773cc5db9b108aadb31",
         "signer": "e12d82125da38ae4420d3586327b86bdc3da42dc5e1bb959f80acac5620b0e8a",
-        "size": 33906587,
+        "size": 34008987,
         "targetSdkVersion": 36,
         "uses-permission": [
           [
@@ -96,13 +96,13 @@
             null
           ]
         ],
-        "versionCode": 23,
+        "versionCode": 33,
         "versionName": "0.0.1"
       },
       {
         "added": 1795359956000,
         "apkName": "stride-dev-arm64-v8a.apk",
-        "hash": "7f6b84a035017950585732a681ab139bc27e77840a7b76f87cf56e5047d58d9a",
+        "hash": "685871081fa9e99b881d17f2df3737fbcab5b8f72dba19b9d2677c754cecc2ab",
         "hashType": "sha256",
         "minSdkVersion": 24,
         "nativecode": [
@@ -111,7 +111,7 @@
         "packageName": "org.stridetasks.stride.dev",
         "sig": "31985f428ae57773cc5db9b108aadb31",
         "signer": "e12d82125da38ae4420d3586327b86bdc3da42dc5e1bb959f80acac5620b0e8a",
-        "size": 31010730,
+        "size": 31039402,
         "targetSdkVersion": 36,
         "uses-permission": [
           [
@@ -163,13 +163,13 @@
             null
           ]
         ],
-        "versionCode": 22,
+        "versionCode": 32,
         "versionName": "0.0.1"
       },
       {
         "added": 1795359956000,
         "apkName": "stride-dev-armeabi-v7a.apk",
-        "hash": "f595859808478cd2d9e857c83ef905bdbbec32c168dad174021023a5a14f3e07",
+        "hash": "b3f74296ec1eec6a6605c6da63372de144b9c1058ec030dc1ac3f506c3940f67",
         "hashType": "sha256",
         "minSdkVersion": 24,
         "nativecode": [
@@ -178,7 +178,7 @@
         "packageName": "org.stridetasks.stride.dev",
         "sig": "31985f428ae57773cc5db9b108aadb31",
         "signer": "e12d82125da38ae4420d3586327b86bdc3da42dc5e1bb959f80acac5620b0e8a",
-        "size": 25350068,
+        "size": 25403316,
         "targetSdkVersion": 36,
         "uses-permission": [
           [
@@ -230,13 +230,13 @@
             null
           ]
         ],
-        "versionCode": 21,
+        "versionCode": 31,
         "versionName": "0.0.1"
       },
       {
         "added": 1795359956000,
         "apkName": "stride-dev.apk",
-        "hash": "e8b30ff9f1566b354ab31ebd3a1ea4879a2ceadfcafa7d03524cc7af66a2ed3d",
+        "hash": "57e9ab1746c66ed9ea6dcd78c3473847722111cb82740d800ef26c876a9e1a0b",
         "hashType": "sha256",
         "minSdkVersion": 24,
         "nativecode": [
@@ -247,7 +247,7 @@
         "packageName": "org.stridetasks.stride.dev",
         "sig": "31985f428ae57773cc5db9b108aadb31",
         "signer": "e12d82125da38ae4420d3586327b86bdc3da42dc5e1bb959f80acac5620b0e8a",
-        "size": 86418101,
+        "size": 86602421,
         "targetSdkVersion": 36,
         "uses-permission": [
           [
@@ -299,7 +299,7 @@
             null
           ]
         ],
-        "versionCode": 2,
+        "versionCode": 3,
         "versionName": "0.0.1"
       }
     ]
